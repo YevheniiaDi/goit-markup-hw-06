@@ -190,11 +190,20 @@ a {
 
 .advantages {
     width: 100%;
-    padding-top: 120px;
-    padding-bottom: 120px;
+    /* padding-top: 120px;
+    padding-bottom: 120px; */
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .advantages-container {
+    max-width: 320px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 0 auto;
+    align-items: center;
+    
+
     
 }
 .visually-hidden {
@@ -212,20 +221,22 @@ a {
 
 .advantages-list {
     display: flex;
-    gap: 24px;
+    flex-wrap: wrap;
+    /* gap: 24px; */
     justify-content: space-between;
+    gap: 72px;
 }
 
 .advantages-item {
     align-items: flex-start;
     justify-content: flex-start;
     flex-direction: column;
-    width: calc((100% - 72px) / 4);
-
+    /* width: calc((100% - 72px) / 4); */
+    width: 100%;
 }
 
 .advantages-item-card {
-    display: flex;
+    /* display: flex;
     justify-content: center;
     margin: 0 auto;
     border: 1px solid #8e8f99;
@@ -234,20 +245,32 @@ a {
     height: 112px;
     align-items: center;
     background: #f4f4fd;
-    margin-bottom: 8px;
+    margin-bottom: 8px; */
+    display: none;
 }
 
 .advantages-subtitle {
-    font-weight: 500;
+    /* font-weight: 500;
     font-size: 20px;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    color: #2e2f42;
+    color: #2e2f42; */
     margin-bottom: 8px;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11111;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #2e2f42;
 }
 
 .advantages-item-text {
-    font-weight: 400;
+    /* font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455; */
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -845,4 +868,28 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .privacy {
     color: #4d5ae5;
+}
+
+/* ----------------media-------------- */
+
+@media screen and (min-width: 768px) {
+    .advantages {
+        padding-top: 96px;
+        padding-bottom: 96px;
+    }
+
+    .advantages-container {
+        display: flex;
+        max-width: 768px;
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-wrap: wrap;
+        margin: 0 auto;
+    }
+
+    .advantages-list {
+        gap: 24px;
+        flex-basis: calc((100% - 24px) / 2);
+        box-sizing: border-box;
+    }
 }
