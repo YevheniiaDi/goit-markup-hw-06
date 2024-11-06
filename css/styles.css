@@ -133,7 +133,7 @@ a {
 
 .title-page {
     background-color: #2e2f42;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-mobil.jpg);
     display: flex;
     width: 100%;
     padding: 72px 0 72px;
@@ -143,9 +143,17 @@ a {
     margin-left: auto;
     margin-right: auto;
     background-size: cover;
-
-
 }
+
+@media screen and (min-resolution: 2dppx), 
+                  (min-resolution: 192dpi),
+                  (-webkit-min-device-pixel-ratio: 2) {
+.title-page {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-mobil-2x.jpg);
+}                    
+                  }
+    
+
 .text-page {
     display: block;
     margin-bottom: 48px;
@@ -926,12 +934,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
        margin: 0 auto;
        padding: 112px 0 112px;
        width: 100%;
-       
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-tabl.jpg);
        
        
     }
     .text-page {
-       
+       max-width: 496px;
        font-size: 56px;
        line-height: 1.07;
   
@@ -940,6 +948,14 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     .container {
        max-width: 768px;
          }
+
+     @media screen and (min-resolution: 2dppx),
+                       (min-resolution: 192dpi),
+                       (-webkit-min-device-pixel-ratio: 2) {
+    .title-page {
+                         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-table-2x.jpg);
+                     }
+                 }
 
     }
     
@@ -1016,6 +1032,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         margin: 0 auto;
         padding: 188px 0 188px;
         width: 100%;
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/peopleoffice.jpg);
     }
     
     .text-page {
@@ -1023,4 +1040,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         font-size: 56px;
         line-height: 1.07;
 }
+
+ @media screen and (min-resolution: 2dppx),
+ (min-resolution: 192dpi),
+ (-webkit-min-device-pixel-ratio: 2) {
+     .title-page {
+         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office2x.jpg);
+     }
+ }
 }
