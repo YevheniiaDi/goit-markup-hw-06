@@ -923,21 +923,18 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     }
     .title-page {
        max-width: 768px;
-       max-height: 436px;
-       position: relative;
        margin: 0 auto;
-       padding: 40px 20px;
+       padding: 112px 0 112px;
        width: 100%;
        
        
        
     }
     .text-page {
+       width: 496px;
        font-size: 56px;
        line-height: 1.07;
-       max-width: 120px;
-       max-height: 496px;
-       margin-bottom: 36px;
+  
     }
 
     }
@@ -1010,4 +1007,16 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     .portfolio-item {
         flex-basis: calc((100% - 48px) / 3);
     }
+    .title-page {
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 188px 0 188px;
+        width: 100%;
+    }
+    
+    .text-page {
+        max-width: 496px;
+        font-size: 56px;
+        line-height: 1.07;
+}
 }
