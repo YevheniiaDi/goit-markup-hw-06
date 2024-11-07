@@ -1043,9 +1043,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
   
     }
 
-    .container {
-       max-width: 768px;
-         }
 
      @media screen and (min-resolution: 2dppx),
                        (min-resolution: 192dpi),
@@ -1077,7 +1074,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     }
     .advantages {
         padding-top: 120px;
-        padding-bottom: 120px;
+        padding-bottom: 60px;
     }
     .advantages-subtitle {
          font-weight: 500;
@@ -1094,8 +1091,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         color: #434455; 
     }
     .team {
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
     }
     .team-list {
         gap: 24px;
@@ -1103,8 +1100,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     .team-container {
         width: 100%;
         max-width: 1158px;
-        padding-top: 120px;
-        padding-bottom: 120px;
+        padding-top: 60px;
+        padding-bottom: 60px;
 
     }
     .card-item {
