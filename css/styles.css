@@ -54,8 +54,13 @@ button {
     justify-content: space-between;
 }
 
+@media screen and (min-width: 768px) {
+.contacts-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;}
 
-
+}
 .header-logo {
     padding: 16px 0;
     display: block;
@@ -133,12 +138,7 @@ button {
     padding: 24px 0;
     margin-right: 120px;
 }
-   .contacts-list {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-
-   }
+   
 
    .nav-link {
        font-weight: 500;
