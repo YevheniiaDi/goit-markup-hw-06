@@ -1206,51 +1206,59 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
                          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-table-2x.jpg);
                      }
                  }
-        .container-footer-card {
-            flex-direction: row;
-            align-items: flex-start;
-            margin-top: 0;
+     .page-footer {
+       padding: 64px 32px;
+       display: flex;
+       flex-direction: column;
+       align-items: center;
         }
-    
-        .footer-logo {
-            margin-bottom: 0;
-            justify-content: flex-start;
+        
+    .container-footer-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        max-width: 720px;
+        margin-top: 0;
         }
-    
-        .footer-form {
-            flex-direction: row;
-            justify-content: center;
-            max-width: none;
+        
+    .footer-logo {
+        margin-bottom: 0;
+        justify-content: flex-start;
         }
-    
-        .footer-soc {
-            gap: 12px;
-            justify-content: flex-start;
-            height: auto;
+        
+    .footer-soc-text,
+    .footer-part-text {
+        text-align: left;
+        margin-right: 16px;
+        font-size: 16px;
         }
-    
-        .container-footer-logo {
-            max-width: none;
-            gap: 48px;
+        
+    .footer-soc {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: flex-start;
         }
-    
-        .footer-container {
-            max-width: none;
-            margin-top: 0;
+        
+    .footer-form {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 16px;
+        width: auto;
+        max-width: none;
+        text-align: left;
         }
-    
-        .footer-part {
-            width: auto;
-            height: auto;
+        
+    .footer-input {
+        width: 220px;
+        margin-right: 8px;
         }
-    
-        .footer-input {
-            width: 200px;
-            margin-right: 16px;
-        }
-    
-        .footer-btn {
-            min-width: 120px;
+        
+    .footer-btn {
+        min-width: 140px;
         }
 
     }
