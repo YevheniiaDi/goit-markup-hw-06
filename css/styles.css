@@ -726,8 +726,8 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .page-footer {
     background-color: #2e2f42;
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding: 96px 16px;
+    padding-left: ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -759,9 +759,13 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 .footer-form {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     gap: 24px;
+    width: 100%;
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .footer-soc {
@@ -801,11 +805,20 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
+    text-align: center;
+    padding-bottom: 16px;
 }
 
 .footer-part {
     width: 288px;
     height: 136px;
+}
+.footer-text {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
 }
 
 .footer-input {
@@ -844,7 +857,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 16px;
+    gap: 8px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -1182,6 +1195,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
        line-height: 1.07;
   
     }
+    
 
 
 
@@ -1192,6 +1206,52 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
                          background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/dark-bg-table-2x.jpg);
                      }
                  }
+        .container-footer-card {
+            flex-direction: row;
+            align-items: flex-start;
+            margin-top: 0;
+        }
+    
+        .footer-logo {
+            margin-bottom: 0;
+            justify-content: flex-start;
+        }
+    
+        .footer-form {
+            flex-direction: row;
+            justify-content: center;
+            max-width: none;
+        }
+    
+        .footer-soc {
+            gap: 12px;
+            justify-content: flex-start;
+            height: auto;
+        }
+    
+        .container-footer-logo {
+            max-width: none;
+            gap: 48px;
+        }
+    
+        .footer-container {
+            max-width: none;
+            margin-top: 0;
+        }
+    
+        .footer-part {
+            width: auto;
+            height: auto;
+        }
+    
+        .footer-input {
+            width: 200px;
+            margin-right: 16px;
+        }
+    
+        .footer-btn {
+            min-width: 120px;
+        }
 
     }
     
