@@ -724,32 +724,28 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
 
 
 
-.footer-text {
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
-    color: #f4f4fd;
-    max-width: 264px;
-    
-}
 .page-footer {
     background-color: #2e2f42;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
-
+    flex-direction: column;
+    align-items: center;
 }
+
 .footer-logo {
-    display: inline-block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     margin-bottom: 16px;
 }
 
 .container-footer-card {
     margin-top: 76px;
     width: 100%;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    
-   
 }
 
 .footer-soc-text {
@@ -759,10 +755,12 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     letter-spacing: 0.02em;
     color: #fff;
     text-align: center;
-    
 }
+
 .footer-form {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     gap: 24px;
 }
 
@@ -773,28 +771,25 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     align-items: center;
     justify-content: center;
     height: 100px;
-
 }
-    
 
 .container-footer-logo {
     max-width: 320px;
     display: flex;
-    align-items: flex-start;
     flex-wrap: wrap;
     align-items: flex-start;
     gap: 72px 24px;
-
 }
+
+.footer-soc-logo {
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .footer-soc-logo:hover,
 .footer-soc-logo:focus {
     background-color: #31d0aa;
 }
 
-.footer-soc-logo {
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-}
 .footer-container {
     max-width: 288px;
     margin-top: 96px;
@@ -806,7 +801,6 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #fff;
-
 }
 
 .footer-part {
@@ -827,23 +821,21 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     padding-left: 16px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     color: #ffffff;
-
 }
+
 .footer-input::placeholder {
     color: #ffffff;
 }
 
 .footer-btn {
     font-weight: 500;
-     font-size: 16px;
+    font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
     text-align: center;
     color: #fff;
     cursor: pointer;
     background-color: #4d5ae5;
-    display: block;
-    margin: 0 auto;
     border-radius: 4px;
     border: none;
     min-width: 165px;
@@ -852,38 +844,19 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
     display: flex;
     align-items: center;
     justify-content: center;
-    align-content: center;
     gap: 16px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    min-width: 165px;
-}
-.footer-logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
-.footer-btn:hover {
-    background-color: #404bbf;
-}
-
+.footer-btn:hover,
 .footer-btn:focus {
     background-color: #404bbf;
-}
-
-.footer-form {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
 }
 
 .send-btn {
     fill: #fff;
     margin-left: 16px;
-
 }
-
 
 .backdrop {
     width: 100%;
@@ -1134,7 +1107,7 @@ box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08), 0 1px 1px 0 rgba(46, 47, 66, 0.1
         display: flex;
         gap: 24px;
     }
-    
+
     .advantages {
         padding-top: 96px;
         padding-bottom: 96px;
